@@ -19,4 +19,21 @@ public class Student {
         System.out.println("Estudiante \"" + studentName +"\" creado!");
 
     }
+    public void tellInfo() {
+        System.out.println("My name is \"" + studentName + "\" and my ID is " + studentId + ".");
+        System.out.println("I'm " + studentAge + " years old and my gender is " + studentGender + ".");
+    }
+
+    public void repeatAfter(String message) {
+        System.out.println("The message is: " + message);
+    }
+
+    public void haveBrithday() {
+        studentAge++;
+    }
+
+    @Override
+    public String toString() {
+        return "Student with name: " + studentName;
+    }
 }
